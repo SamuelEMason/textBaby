@@ -199,3 +199,28 @@ textarea,
 	border-radius: 50%;
 	cursor: pointer;
 }
+
+@media (max-width: 480px) {
+	body {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.btn-sender, .placeholder {
+		display: none;
+	}
+
+	.main-header {
+		height: 10vh;
+		width: 100vw;
+	}
+	.main-container {
+		width: 100vw;
+		height: 90vh;
+	}
+
+	.chat-container {
+		width: 100vw;
+		height: 90vh;
+	}
+}
