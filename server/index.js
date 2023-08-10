@@ -33,11 +33,21 @@ const runPrompt = async (prompt) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan('common'));
-app.use(
+
+if (process.env.NODE_ENV === 'production') {
+	app.use(
+		cors({
+			origin: 'http://text-baby-7h51uni38-samuelemason.vercel.app',
+			methods: ['POST']
+		})
+	);
+} else {
+	app.use(
 	cors({
 		origin: 'http://127.0.0.1:5173',
 	})
 );
+}
 
 app.post('/baby', async (req, res) => {
 	try {
