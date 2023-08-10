@@ -62,5 +62,4 @@ This project is licensed under the MIT License.
 
 ### Acknowledgements
 - This project was inspired by Carolyn and Colleen.
-Special thanks to [acknowledge contributors or resources that helped you].
 - Powered by the [OpenAI ChatGPT API](https://openai.com/).
