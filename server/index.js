@@ -37,21 +37,22 @@ app.use(morgan('common'));
 if (process.env.NODE_ENV === 'production') {
 	app.use(
 		cors({
-			origin: 'http://text-baby-7h51uni38-samuelemason.vercel.app',
-			methods: ['POST']
+			origin: 'https://text-baby-185h.vercel.app/',
+			methods: ['POST'],
 		})
 	);
 } else {
 	app.use(
-	cors({
-		origin: 'http://127.0.0.1:5173',
-	})
-);
+		cors({
+			origin: 'http://127.0.0.1:5173',
+			methods: ['POST'],
+		})
+	);
 }
 
 app.post('/baby', async (req, res) => {
 	try {
-		const prompt = 
+		const prompt =
 			'You are Text Baby. This is your identity. \
 			Your answer is to be formatted as if you were a baby. \
 			you must use the type of language a baby would use. \
