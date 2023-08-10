@@ -36,17 +36,17 @@ app.use(morgan('common'));
 
 if (process.env.NODE_ENV === 'production') {
 	app.use(
-		// cors({
-		// 	origin: 'https://text-baby-client.vercel.app/',
-		// 	methods: ['POST'],
-		// }
+		cors({
+			origin: '*',
+			methods: ['POST'],
+		})
 	);
 } else {
 	app.use(
-		// cors({
-		// 	origin: 'http://127.0.0.1:5173',
-		// 	methods: ['POST'],
-		// })
+		cors({
+			origin: 'http://127.0.0.1:5173',
+			methods: ['POST'],
+		})
 	);
 }
 
