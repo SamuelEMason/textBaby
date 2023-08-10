@@ -1,0 +1,11 @@
+{
+	"name": "textbaby",
+	"version": "1.0.0",
+	"description": "TextBaby is a chatbot project that simulates conversation with a baby. The chatbot is built using React for the front end and Node.js for the back end.",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm run --prefix ./client build"
+	},
+	"author": "",
+	"license": "ISC"
+}
