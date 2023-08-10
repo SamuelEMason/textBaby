@@ -4,7 +4,7 @@ const API_URL =
 	mode === 'development'
 		? 'http://localhost:3001/baby'
 		: 'https://text-baby-server.vercel.app/baby';
-		
+
 export const sendPrompt = async (data) => {
 	try {
 		const response = await fetch(API_URL, {
