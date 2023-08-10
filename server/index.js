@@ -37,7 +37,7 @@ app.use(morgan('common'));
 if (process.env.NODE_ENV === 'production') {
 	app.use(
 		cors({
-			origin: 'https://text-baby-185h.vercel.app/',
+			origin: 'https://text-baby-client.vercel.app/',
 			methods: ['POST'],
 		})
 	);
